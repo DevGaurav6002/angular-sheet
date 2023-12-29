@@ -1,0 +1,22 @@
+.top-nav-container{
+    width: 100wv;
+    height: 40px;
+    padding: 5px 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+
+    .nav-list{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        p{
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+    }
+}

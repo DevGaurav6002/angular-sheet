@@ -1,0 +1,21 @@
+<div class="template-container">
+    <div class="ng-class-directive">
+        <h2>Pipes</h2>
+        <h4>Using `currency` pipe</h4>
+        <p>{{'1400000'  | currency:'INR'}}</p>
+        <h4>Using `date` pipe</h4>
+        <p>{{ date | date}}</p>
+        <h4>Using `date` With params - short Time</h4>
+        <p>{{ date | date:'short'}}</p>
+        <h4>Using `date` With params - medium Time</h4>
+        <p>{{ date | date:'medium'}}</p>
+        <h4>Using `date` With params - ling Time</h4>
+        <p>{{ date | date:'long'}}</p>
+        <h4>Using `date` With params - 'DD/MM/YYYY'</h4>
+        <!-- please remember to keep 'M' always capital -->
+        <p>{{ date | date:'dd/MM/yyyy'}}</p>
+        <h4>Using Custom pipe To Transform data (make all letters uppercase)</h4>
+        <p>{{ 'i am fransformed from lower case to upper case' | toUpperCase}}</p>
+        <h4>Using Custom pipe To filter data (get Only even Numbers from 1 to 10 )</h4>
+        <p *ngFor="let n of num | evenNums">{{n}}</p>
+</div>
